@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+<div id="container">
+	<nav id="navbar" class="borda-branca">
+		<a class="link" href="#welcome-section">
+			<div id="navLogo">
+				<h2 id="logo">WTG</h2>
+			</div>
+		</a>
+		
+
+		<div id="navLinks">
+			<ul id="uList">
+        		<li class="list"><a class="link" href="#welcome-section">HOME</a></li>				
+				<li class="list"><a class="link" href="#aboutImg">ABOUT</a></li>
+				<li class="list"><a class="link" href="#projects">PROJECTS</a></li>
+				<li class="list"><a class="link" href="#contactImg">CONTACT</a></li>
+				<li class="list"><a class="link" href="#FAQS">CURIOSIDADES</a></li>        
+			</ul>
+		</div>
+	</nav>
+
+	<main id="main">
+
+		<div id="welcome-section">
+			<div id="layer">
+				<h1 id="welcomeHeadline">Hi! I'm Walkíria Torres Gonçalves,</h1>
+				<p id="welcomeParagraf">Web Developer</p>				
+				<!-- <a id="welcomeIcon" href="#projects"><i class="icon fa fa-arrow-down"></i></a> -->				
+				<a class="link" href="#aboutImg"><button id="btn-welcome" class="btn">Know me better</button></a>						        
+			</div>	
+		</div>
+
+
+
+		<div id="aboutImg" class="divHeadline">
+			<h1>ABOUT ME</h1>             
+		</div>
+
+		<div id="about" class="main-about">
+			<div class="about-tile">
+				<img id="meu-perfil" src="./img/meu-perfil.jpg" alt="">
+
+			</div>
+			<div class="about-tile">
+				<p class="text">I'm passionate about solving problems, learning and always open to news challenges. Student of systems analysis and development at FICR. Learning a little bit every day about the frontend.</p>
+				
+				<p class="text">I have a dream: impact people and change the world. I started with the idealization and development of the project Aqui Tem Saúde developed 1st period of college with my classmates.</p>
+
+				<p class="text">Currently work in the financial market as business assistant. Assisting in customer portfolio management, product sales and making investment portfolio daily.</p>
+
+				<p class="text">Do you want to know more about my portfolio?</p>
+				
+				<a class="link" href="#projects"><button id="btn-projects" class="btn">Check it out</button></a>
+				
+
+			</div>
+			
+      <br>
+          
+			<br>
+		</div>
+
+		<div id="projects">
+			<div id="header-project"><h2>PROJECTS</h2></div>
+			<div id="main-projects" class="main-projects">
+
+				<div class="project-tile">					
+					<img class="iframe" src="./img/aqui-tem-saude.png" alt="imagem do projeto aqui tem saúde">        
+					<br>
+					<a class="links" href="https://kind-varahamihira-a64dfa.netlify.app/" target="_blank">Aqui Tem Saúde</a><p>Projeto desenvolvido no 1º período do curso de ADS</p>
+
+				</div>
+				<div class="project-tile">
+					<img class="iframe" src="./img/professor-allocation.png" alt="">        
+					<br>
+					<a class="links" href="https://elegant-knuth-94245c.netlify.app/" target="_blank">Professor Allocation</a><p>Projeto desenvolvido no curso Recode V</p>
+				</div>
+				<div class="project-tile">
+					<img class="iframe" src="./img/palindromo.jpeg" alt="imagem do projeto palindromo">
+					        
+					<br>
+					<a class="links" href="https://laughing-bhabha-bc1e6d.netlify.app/" target="_blank">Palíndromo</a>
+	        		<p>Descrição breve do projeto</p>
+				</div>
+				<div class="project-tile">
+					<iframe class="iframe" src=""></iframe>        
+					<br>
+					<a class="links" href="https://github.com/walkiriatorres/" target="_blank">Check it out!</a>
+	        		<p>Projeto desenvolvido no 1º período do curso de ADS</p>
+				</div>
+
+			</div>											
+		</div>
+		<div id="projectImg" class="divHeadline">
+			<h1 class="headline1">MY PROJECTS</h1>
+		</div>
+		<div>
+			<div class="container-slide">
+			    <div class="action-button" id="previous">&laquo</div>
+			    <div class="container-items" id="container-items"></div>
+			    <div class="action-button" id="next">&raquo</div>
+	    	</div>
+		</div>	
+		<div id="contactImg" class="divHeadline">
+			<!-- <p><small>DO YOU WANT TO KNOW MORE ABOUT ME?</small></p>-->
+			<h1 class="headline1">CONTACT ME</h1>
+		</div>
+
+		<div id="contact">
+			<a class="fa fa-linkedin" href="https://www.linkedin.com/in/walkiria-gon%C3%A7alves/" target="_blank"></a>	
+			<a class="fa fa-github" id="profile-link" href="https://github.com/walkiriatorres" target="_blank"></a>
+			<a class="fa fa-facebook" href="https://www.facebook.com/walkiriatgoncalves" target="_blank"></a>
+			<a class="fa fa-instagram" href="https://www.instagram.com/walkiria.torres" target="_blank"></a>
+			<a class="fa fa-whatsapp" id="profile-link" href="https://api.whatsapp.com/send?phone=+5581999914676" target="_blank"></a>
+		</div>
+
+		<div id="FAQS"class="container-FAQ">
+        <h2>CURIOSIDADES</h2>
+        <div class="tema">
+            <h5>Pergunta 1</h5>
+        </div>
+        <div class="descricao">
+            <p>Resposta</p>
+        </div>
+
+        <div class="tema">
+            <h5>Pergunta 2</h5>
+        </div>
+        <div class="descricao">
+            <p>Resposta</p>
+        </div>
+
+        <div class="tema">
+            <h5>Pergunta 3</h5>
+        </div>
+        <div class="descricao">
+            <p>Resposta</p>
+        </div>
+
+        <div class="tema">
+            <h5>Pergunta 4</h5>
+        </div>
+        <div class="descricao">
+            <p>Resposta</p>
+        </div>
+
+        
+    </div>
+		
+	</main>
+
+	<footer id="footer">
+		<p><small>&copy; 2021. Developed by: Walkíria Torres</small></p>
+	</footer>
+</div>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
