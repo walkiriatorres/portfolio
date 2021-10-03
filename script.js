@@ -2,11 +2,11 @@
 
 $(function() {
     $(window).on("scroll", function() {
-    	if($(window).scrollTop() < 10) {
+    	if($(window).scrollTop() == 0 ) {
     		$("#navbar").addClass("borda-branca");
     		$("#navbar").removeClass("menu-mexendo");
     	}
-        if($(window).scrollTop() > 10) {
+        if($(window).scrollTop() > 1) {
             $("#navbar").addClass("menu-mexendo");
             $("#navbar").removeClass("borda-branca");
         } else {

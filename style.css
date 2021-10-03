@@ -31,6 +31,7 @@ body, #container {
 	z-index: 999;
 	color:#fff;    
     width: 100%;
+
     padding: 1vh;
     
 }
@@ -131,9 +132,10 @@ body, #container {
 }
 
 #about {
-	padding: 2vw 0;
+	padding: 5vw 0;
 	background-color: #e8e3e3;
 	color: #000000b6;
+
 }
 
 .main-about {
@@ -167,7 +169,9 @@ body, #container {
 
 /* tela PROJETOS ---------------------------------------------------------------------------------------*/
 #projects {
-	padding: 10vh 0;
+	padding: 1vh 0;
+	border: 1px solid black;
+	background-color: #000000b6;
 }
 
 .main-projects {
@@ -182,16 +186,18 @@ body, #container {
 	margin: 1.5vw;
 	height: 37vw;
 	width: 35vw;
+	background-color: #f2b7a7;
 }
 
 .iframe {
 	width: 60%;
 	height: 60%;
 	margin: 1.8vw;
+	border-radius: 5px;
 }
 
 .links {
-	padding: 2.5vw;
+	padding: 1.5vw;
 	color: white;
 	font-family: 'Architects Daughter', cursive;
 	font-weight: bold;
@@ -202,6 +208,12 @@ body, #container {
 	color: #000000b6;
 }
 
+/* .project-description{
+	padding: 1.5vw 0;
+	color: #000000b6;
+	font-family: 'Architects Daughter', cursive;
+}
+*/
 /* tela CONTACT ME ---------------------------------------------------------------------------------------*/
 #contact {
 	background-color: white;
@@ -219,86 +231,12 @@ body, #container {
 	color: #ffa38a;
 }
 
+/* tela FOOTER ---------------------------------------------------------------------------------------*/
 #footer {
 	padding-left: 5vw;
-	color: #ffa38a;
+	color: #000000b6;
+	background-color: #ffa38a;
 	text-align: center;
-}
-
-@media (max-width: 600px) {
-
-#container {
-	font-size: 4vw;
-}
-
-#navLogo {
-	padding-left: 8vw;
-	font-size: 3vw;
-}
-
-#navLinks {
-	padding-right: 8vw;
-	font-size: 3vw;
-}
-
-#welcome-section {
-	font-size: 3.5vw;
-}
-  
-  #welcomeParagraf {
-    font-size: 3.6vw;
-  }
-
-.divHeadline {
-	padding: 7vw;
-	font-size: 4vw;
-}
-
-#main-projects {
-	margin-top: 10vw;
-	margin-bottom: 10vw;
-}
-
-.project-tile {
-	margin-top: 5vw;
-  margin-bottom: 5vw;
-	height: 100vw;
-	width: 90vw;
-}
-
-.iframe {
-	width: 60%;
-	height: 60%;
-}
-
-.links {
-	padding: 5vw;
-}
-
-#about {
-	padding-top: 5vw;
-	padding-bottom: 5vw;
-}
-
-.text {
-	padding-left: 10vw;
-	padding-right: 10vw;
-	font-size: 4vw;
-}
-
-#contact {
-	padding: 5vw;
-	font-size: 5vw;
-}
-
-.fa {
-	padding: 6vw;
-}
-
-#footer {
-	padding-left: 8vw;
-}
-
 }
 
 /*PERGUNTAS FREQUENTES */
@@ -376,6 +314,88 @@ body, #container {
     transition: all .5s ease-in;
     max-height: 0;
 }
+
+/* RESPONSIVIDADE - TELA ATÉ 600px ----------------------------------------------------------------- */
+@media (max-width: 600px) {
+
+#container {
+	font-size: 4vw;
+}
+
+#navLogo, #navlinks {
+	padding-left: 8vw;
+	font-size: 3vw;
+}
+
+#welcome-section {
+	font-size: 3.5vw;
+}
+  
+#welcomeParagraf {
+    font-size: 3.6vw;
+  }
+
+.divHeadline {
+	padding: 7vw;
+	font-size: 4vw;
+}
+
+#main-projects {
+	margin-top: 1vw;
+	margin-bottom: 1vw;
+}
+
+.project-tile {
+	margin: 5vw 0;
+	height: 100vw;
+	width: 90vw;
+	border: 1px solid black;
+	background-color: #000000b6;
+}
+
+.iframe {
+	width: 60%;
+	height: 60%;
+	border: 1px solid black;
+}
+
+.links {
+	padding: 1.5vw;
+	border: 1px solid black;
+}
+
+#about {
+	padding: 2vw 0;
+}
+
+.about-tile {
+	margin: 2vw 0;
+	height: auto;
+	width: 90vw;	
+}
+
+.text {
+	padding: 1vw 0;
+	font-size: 2vw;
+	border:  1px solid black;
+}
+
+#contact {
+	padding: 5vw 0;
+	font-size: 5vw;
+}
+
+.fa {
+	padding: 6vw;
+}
+
+#footer {
+	padding-left: 8vw;
+}
+
+}
+
+
 
 /* SLIDE SHOW -------------------------------------------------------------------------- */
 .container-slide{
