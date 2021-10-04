@@ -369,17 +369,19 @@ body, #container {
 
 #about {
 	padding: 2vw 0;
+
+	height: 80vh;
 }
 
 .about-tile {
 	margin: 2vw 0;
-	height: auto;
+	height: 60vh;
 	width: 90vw;	
 }
 
 .text {
 	padding: 1vw 0;
-	font-size: 1vw;
+	font-size: 2.5vw;
 }
 
 #contact {
