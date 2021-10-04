@@ -368,6 +368,9 @@ body, #container {
 }
 
 #about {
+	display: flex;
+    justify-content: center;
+    align-items: center;
 	padding: 2vw 0;
 
 	height: 80vh;
@@ -375,7 +378,7 @@ body, #container {
 
 .about-tile {
 	margin: 2vw 0;
-	height: 60vh;
+	height: 50vh;
 	width: 90vw;	
 }
 
