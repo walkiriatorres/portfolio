@@ -62,14 +62,14 @@ loadImages( images, containerItems );
 
 let items = document.querySelectorAll('.item');
 
-const previous = () => {
-    containerItems.appendChild(items[0]);
+const previous = () => {    
+    const lastItem = items[items.length - 1];
+    containerItems.insertBefore( lastItem, items[0] );
     items = document.querySelectorAll('.item');
 }
 
 const next = () => {
-    const lastItem = items[items.length - 1];
-    containerItems.insertBefore( lastItem, items[0] );
+    containerItems.appendChild(items[0]);
     items = document.querySelectorAll('.item');
 }
 
