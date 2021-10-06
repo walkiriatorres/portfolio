@@ -1,5 +1,4 @@
-/* menu*/
-
+/* MENU*/
 $(function() {
     $(window).on("scroll", function() {
     	if($(window).scrollTop() == 0 ) {
@@ -16,24 +15,47 @@ $(function() {
     });
 });
 
-/* FAQS */
+/* BACKGROUND SLIDE SHOW WELCOME SECTION */
+var imageCount = 0;
+var currentImage = 0;
+var photos = new Array();
+var welcomeSection = document.getElementById("welcome-section");
 
-var tema = document.getElementsByClassName('tema');
-
-var i;
-var tamanho = tema.length;
-for(i = 0; i<tamanho; i++){
-    tema[i].addEventListener('click', function(){
-        this.classList.toggle('active');
-        var descricao = this.nextElementSibling;
-        if(descricao.style.maxHeight){
-            descricao.style.maxHeight = null;
-        }else{
-            descricao.style.maxHeight = descricao.scrollHeight + 'px';
-        }
-    })
+ 
+photos[0] = './img/coder1.jfif';
+photos[1] = './img/coder2.jfif';
+photos[2] = './img/coder3.jfif';
+photos[3] = './img/coder4.jfif';
+ 
+var preLoadImages = new Array();
+for (var i = 0; i < photos.length; i++)
+{
+   if (photos[i] == "")
+      break;
+ 
+   preLoadImages[i] = new Image();
+   preLoadImages[i].src = photos[i];
+   imageCount++;
 }
-
+ 
+function startSlideShow()
+{
+   if (welcomeSection && imageCount > 0)
+   {
+      welcomeSection.style.backgroundImage = "url("+photos[currentImage]+")";    
+      welcomeSection.style.backgroundAttachment = "fixed";
+      welcomeSection.style.backgroundRepeat = "repeat";
+      welcomeSection.style.backgroundPosition = "left top";
+ 
+      currentImage = currentImage + 1;
+      if (currentImage > (imageCount-1))
+      { 
+         currentImage = 0;
+      }
+      setTimeout('startSlideShow()', 3000);
+   }
+}
+startSlideShow();
 
 /* SLIDE SHOW */
 
@@ -75,3 +97,21 @@ const next = () => {
 
 document.querySelector('#previous').addEventListener('click', previous);
 document.querySelector('#next').addEventListener('click', next);
+
+/* FAQS */
+var tema = document.getElementsByClassName('tema');
+
+var i;
+var tamanho = tema.length;
+for(i = 0; i<tamanho; i++){
+    tema[i].addEventListener('click', function(){
+        this.classList.toggle('active');
+        var descricao = this.nextElementSibling;
+        if(descricao.style.maxHeight){
+            descricao.style.maxHeight = null;
+        }else{
+            descricao.style.maxHeight = descricao.scrollHeight + 'px';
+        }
+    })
+}
+
