@@ -98,20 +98,3 @@ const next = () => {
 document.querySelector('#previous').addEventListener('click', previous);
 document.querySelector('#next').addEventListener('click', next);
 
-/* FAQS */
-var tema = document.getElementsByClassName('tema');
-
-var i;
-var tamanho = tema.length;
-for(i = 0; i<tamanho; i++){
-    tema[i].addEventListener('click', function(){
-        this.classList.toggle('active');
-        var descricao = this.nextElementSibling;
-        if(descricao.style.maxHeight){
-            descricao.style.maxHeight = null;
-        }else{
-            descricao.style.maxHeight = descricao.scrollHeight + 'px';
-        }
-    })
-}
-
