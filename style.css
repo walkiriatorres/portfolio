@@ -73,12 +73,8 @@ body, #container {
 }
 
 /* tela 1 */
-#welcome-section {
-	background-image: url("./img/foto-home.jfif");
+#welcome-section {	
 	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center;
 	height: 100vh;
 }
 
